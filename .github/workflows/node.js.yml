@@ -16,6 +16,8 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    if: github.event_name == 'push'
+
     strategy:
       matrix:
         node-version: [18.x]
