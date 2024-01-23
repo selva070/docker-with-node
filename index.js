@@ -16,10 +16,10 @@ app.use(bodyParser.json());
 app.post("/dockerhub-webhook", (req, res) => {
   try {
     // Verify that the request is a Docker Hub webhook ping
-    // if (req.body && req.body.zen) {
-    //   console.log('Docker Hub webhook ping received:', req.body.zen);
-    //   return res.status(200).send('Webhook Ping Received');
-    // }
+    if (req.body && req.body.zen) {
+      console.log('Docker Hub webhook ping received:', req.body.zen);
+      return res.status(200).send('Webhook Ping Received');
+    }
 
     // Handle other Docker Hub webhook events here
     console.log("Docker Hub webhook event received:", req.body);
