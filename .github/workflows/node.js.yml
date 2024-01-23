@@ -44,7 +44,10 @@ jobs:
         dockerfile: Dockerfile
 
   build_only:
+  
     runs-on: ubuntu-latest
+
+    if: github.event_name == 'pull_request'
 
     steps:
       - name: Checkout Repository
