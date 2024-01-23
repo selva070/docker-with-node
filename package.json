@@ -19,7 +19,8 @@
   "homepage": "https://github.com/abhay-321/node-docker-ci-cd#readme",
   "dependencies": {
     "express": "^4.17.3",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {}
 }
