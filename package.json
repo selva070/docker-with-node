@@ -1,0 +1,25 @@
+{
+  "name": "docker-ci-cd",
+  "version": "1.0.0",
+  "description": "Dockerize Node App using github ci cd",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhay-321/node-docker-ci-cd.git"
+  },
+  "author": "Abhay Ahire",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhay-321/node-docker-ci-cd/issues"
+  },
+  "homepage": "https://github.com/abhay-321/node-docker-ci-cd#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "jest": "^27.5.1"
+  },
+  "devDependencies": {}
+}
