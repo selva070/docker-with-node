@@ -41,7 +41,7 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
         dockerfile: Dockerfile
 
-    build_only:
+  build_only:
     runs-on: ubuntu-latest
 
     steps:
